@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "hello#index"
+  root "tops#index"
+
+  resources :sites, only: [:new, :create, :show]
 end
